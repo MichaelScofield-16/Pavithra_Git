@@ -12,13 +12,15 @@ public class Sample2 {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.google.com");
+		driver.get("https://www.fb.com");
 		
 		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 		System.out.println(driver.getTitle());
+
+		System.out.println(driver.getCurrentURL);
 		
 		driver.close();
 		
